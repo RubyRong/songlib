@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.textfield.*?>
+
+
+
+<BorderPane fx:controller="view.songcontroller" 
+      xmlns:fx="http://javafx.com/fxml" 
+    prefHeight="900" prefWidth="900">
+        
+    <top>
+        <Text text="Songdisplay"/>
+    </top>
+
+    <center>
+        <ListView fx:id="playlist"
+      	prefHeight="200.0" 
+      	prefWidth="200.0" 
+      	AnchorPane.bottomAnchor="10.0" 
+      	AnchorPane.leftAnchor="10.0" 
+      	AnchorPane.rightAnchor="10.0" 
+      	AnchorPane.topAnchor="10.0" />
+    </center>
+    <right>
+        <Button id="button"  text="Click Me!" 
+          fx:id="button"/>
+            
+    </right>
+    <bottom>
+        <Label id="label" fx:id="label"/>
+    </bottom>
+
+</BorderPane>
